@@ -1,0 +1,158 @@
+--------------------------------------------------------------------------
+Stacks and Queues
+--------------------------------------------------------------------------
+
+Acronyms
+1. FIFO - First in, first out (queue)
+2. LIFO - Last in, last out (stack) (can also be FILO)
+
+
+Queue Info:
+- store both the head and the tail
+
+Queue vocab
+- add values to the end of the list (enqueue) (add to tail)
+- remove values from front          (dequeue) (remove from head)
+- look at the front of a queue      (peek)
+
+
+Stack Info:
+- store the head of the list
+
+Stack vocab
+- add value to the stack                       (push)
+- removing from the stack                      (pop)
+- looking at the value at the top of the stack (top)
+
+
+
+--------------------------------------------------------------------------
+TREES
+--------------------------------------------------------------------------
+
+Tree Traversals:
+
+pre-order -> root first       (add values from left to right as given)
+in order -> root middle       (least to greatest)
+post-order -> root last       (add values from right to left as given)
+
+
+Balance Factor Formula
+           BF = |Dr - Dl|
+Tree is balance if BF is = -1, 0, 1
+
+
+  Types of imbalances:              (require)
+  - LL: left left                   (1 rotation to the right)
+  - RR: right right                 (1 rotation to the left)
+  - LR: left right                  (2 rotations to the left, then to the right)
+  - RL: right left                  (2 rotations to the right, then to the left)
+
+  For AVL tree rotation, check from the BOTTOM -> UP
+
+
+Worst cases for the following:
+
+  insert to BST:                                     O(n) - all nodes are on one side so it becomes basically a linked list
+  remove from AVL tree:                              O(log(n)) - AVL trees are always balanced, so the average big Oh is the same as worst case
+  remove tail from doubly linked list:               O(n) - we have to transverse to the tail first which is O(n)
+  add to tail to circular linked list:               O(1)
+  add to head of a circular linked list:             O(1)
+  remove node at position n in circular linked list: O(n)
+  add a value at position n on doubly linked list (storing both head and tail): O(n)
+
+
+
+--------------------------------------------------------------------------
+Post-fix and In-fix
+--------------------------------------------------------------------------
+(No parenthesis in post-fix)
+(in-fix should ALWAYS finish with a ")" )
+
+
+infix -> postfix
+
+- when you push a closing parenthesis into the stack, we pop everything until we reach open parenthesis
+
+- when you push something with the same priority as the thing below it, pop the thing below it      (* /, + -)
+
+- if the thing you push has lower priority over the thing below it, we pop the thing below it       (+ *, - /)
+
+
+
+postfix -> answer
+
+* just add to the stack and make the operations whenever a symbol is added to the stack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------
+Topics that will be on the exam:
+1) AVL trees
+2) BST
+3) Stack
+4) queues
+5) postfix and infix
+6) single linked list
+7) doubly linked list
+8) circular singly linked list
+9) circular doubly linked list
+10) structs for linked lists
+
+
+things to focus on:
+- big oh questions about different data structures
+- stacks (FILO) vs queue concepts (FIFO)
+- infix and postfix
+- creating AVL tree while rotating it when it gets unbalanced
+- inorder, postorder, preorder
+- different linked lists differences
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

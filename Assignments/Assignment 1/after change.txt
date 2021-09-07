@@ -1,0 +1,68 @@
+for (j = 0; j < currRow->size; ++j)
+        {
+            if (currRow->arr[j]->column < col && (!colBefore || colBefore->column < currRow->arr[j]->column))
+            {
+                colBefore = currRow->arr[j];
+            }
+
+            if (currRow->arr[j]->column > col && (!colAfter || colAfter->column > currRow->arr[j]->column))
+            {
+                colAfter = currRow->arr[j];
+            }
+        }
+
+        // are these right??
+        // checking every row of columns
+
+        // I THINK THIS IS RIGHT !!!!!!!!!!!!!!!
+        for (j = 0; j < currCol->size; ++j)
+        {
+            if (currCol->arr[j]->row < row && (!rowBefore || rowBefore->row < currCol->arr[j]->row))
+            {
+                rowBefore = currCol->arr[j];
+            }
+
+            if (currCol->arr[j]->row > row && (!rowAfter || rowAfter->row > currCol->arr[j]->row))
+            {
+                rowAfter = currCol->arr[j];
+            }
+        }
+
+
+
+
+
+
+
+
+Before Change:
+
+for (j = 0; j < currRow->size; ++j)
+        {
+            if (currRow->arr[j]->column < col && (!colBefore || colBefore->column > currRow->arr[j]->column))
+            {
+                colBefore = currRow->arr[j];
+            }
+
+            if (currRow->arr[j]->column > col && (!colAfter || colAfter->column < currRow->arr[j]->column))
+            {
+                colAfter = currRow->arr[j];
+            }
+        }
+
+        // are these right??
+        // checking every row of columns
+
+        // I THINK THIS IS RIGHT !!!!!!!!!!!!!!!
+        for (j = 0; j < currCol->size; ++j)
+        {
+            if (currCol->arr[j]->row < row && (!rowBefore || rowBefore->row > currCol->arr[j]->row))
+            {
+                rowBefore = currCol->arr[j];
+            }
+
+            if (currCol->arr[j]->row > row && (!rowAfter || rowAfter->row < currCol->arr[j]->row))
+            {
+                rowAfter = currCol->arr[j];
+            }
+        }

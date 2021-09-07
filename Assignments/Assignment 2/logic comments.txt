@@ -1,0 +1,52 @@
+    // Reads in how the range of values to guess (scanning)
+
+    // create a loop ()
+    {
+        // outputs the middle point of the range
+
+        // see if answer is correct (scan user input)
+
+        // guessing the midpoint
+        // if yes, return the guess
+
+
+        // guessing the midpoint (CHECKPOINT AFTER CHECKING IF COLDER OR WARMER)
+        // if not correct, warmer or colder (evaluating number AT mid)
+        {
+            // checks position mid - 1
+            // if yes, return the guess
+
+            // if not correct (evaluating number BEFORE mid)
+            {
+
+                // if colder
+                {
+                    // CHANGE THE RANGE
+
+                    // l = mid + 1
+                    // mid = (r + l) / 2
+
+                    //checks spot at mid (ANY RESULT HERE IS IRRELEVANT, EXCEPT FOR "NO CHANGE" and "YES")
+
+                    // if yes, return the guess
+                }
+
+
+                // if warmer
+                {
+                    // CHANGE THE RANGE
+
+                    // r = mid - 2
+                    // mid = (r + l) / 2
+
+                    // checks spot at mid (ANY RESULT HERE IS IRRELEVANT, EXCEPT FOR "NO CHANGE" and "YES")
+
+                    // if yes, return the guess
+
+                }
+
+
+            }
+
+        }
+    } // end of loop
